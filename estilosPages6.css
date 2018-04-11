@@ -1,0 +1,97 @@
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0px;
+}
+
+/*header*/
+header{
+	padding:20px;
+	background-color: #f1f1f1;
+	display: flex;
+	justify-content: space-between;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+	padding: 10px;
+}
+
+a:hover{
+	background-color: white;
+	color: black;
+}
+
+/*main content*/
+.row{
+	overflow: hidden;/*solucion a float left*/
+}
+
+.column{
+	width: 50%;
+	float: left;
+}
+
+.row .column img{
+	width: 100%;/*ocupa un ancho del 100% de su contenedor*/
+	margin-bottom: -8px;
+}
+
+/*las imagenes son elementos de tipo inline,
+si quieres ver el borde establece primero el ancho y el alto*/
+/*img{
+	width: 50px;
+	height: 50px;
+	border:5px solid lightblue;
+}*/
+
+/*footer*/
+footer.w3-center{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+	background-color: lightgray;
+	
+}
+
+p.w3-large{
+	text-align: center;
+	color: hsla(354, 100%, 62%, 0.8);
+	font-weight: bolder;
+}
+
+div.w3-section{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+	padding: 15px 5px;
+}
+
+.w3-button{
+	background-color: black;
+	color: white;
+	border-radius: 10px 10px;
+	width: 100%;
+}
+
+.w3-button:hover{
+	background-color: darkgray;
+}
+
+.w3-hover-text-green:hover{
+	color: green;
+	text-decoration: underline;
+	background-color: lightgray;
+}
+
+input.w3-input{
+	width: 100%;
+}
+
+
